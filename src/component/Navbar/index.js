@@ -1,7 +1,6 @@
 import React ,{useState,useEffect}from 'react'
 import {FaBars, FaTimes} from "react-icons/fa"
-import { IconContext } from "react-icons/lib"
-import{Nav,NavbarContainer,NavLogo,NavIcon,MobileIcon,NavItem,NavMenu,NavLinks} from "./NavbarElements"
+import{Nav,NavbarContainer,NavLogo,MobileIcon,NavItem,NavMenu,NavLinks} from "./NavbarElements"
 
 const Navbar = ()=>{
     const [click,setClick] = useState(false)
@@ -28,7 +27,7 @@ const Navbar = ()=>{
             <Nav active={scroll} click={click}>
               <NavbarContainer>
                 <NavLogo to="/">
-                    <NavIcon />
+                   
                     WiCS
                 </NavLogo>
                 <MobileIcon onClick={handleClick}>
