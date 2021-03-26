@@ -1,5 +1,14 @@
 import React from "react"
+import Layout from "../component/layout"
+import HeroSection from "../component/HeroSection"
+
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <Layout>
+      
+      <HeroSection />
+    </Layout>
+    
+  )
 }
